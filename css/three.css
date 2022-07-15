@@ -1,0 +1,338 @@
+header .r_text1{
+    margin-top: 0.8em;
+    margin-left: 8em;
+}
+header .row{
+    font-size: 1.5em;
+}
+header .r_text1 div{
+    display: inline-block;
+    margin-top: 0.5em;
+}
+header .r_text1 div:first-child{
+    color: rgb(141, 141, 141);
+}
+header .r_text1 div:not(:last-child)::after{
+    content: "/";
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.main{
+    position: relative;
+    margin-left: 150px;
+}
+.main .mybtn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(215, 215, 215);
+}
+.main .top{
+    top: -15px;
+    left:105px ;
+    transform: rotate(-90deg);
+}
+.main .but{
+    top: 520px;
+    left:105px ;
+    transform: rotate(90deg);
+}
+.main .mybtn:hover{
+    background-color: #D10024;
+    color: white;
+}
+.main .box-left div.show{
+    border: 1px solid rgb(215, 215, 215);
+    width: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main .box-left div.show:hover{
+    border:2px solid #D10024;
+}
+.main .box-left img{
+    width: 100%;
+}
+.main .box-mid{
+    position: relative;
+}
+.main .box-mid button{
+    position: absolute;
+}
+.main iframe{
+   height: 700px;
+}
+.main .box_red{
+    position: relative;
+    display:inline-block;
+    width: 180px;
+    height: 2.8em;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 2.8em;
+    transition: all 0.2s ease;
+}
+.main .box_red i{
+    display: none;
+}
+.main .box_red span{
+    transition: all 0.2s ease;
+}
+.main .box_red:hover{
+    cursor: pointer;
+}
+.main .box_red:hover i{
+    display: inline-block;
+}
+.main .box_red:hover span{
+    margin-left: 0.5em;
+}
+.main .box_red:hover{
+    width: 200px;
+    background-color: white;
+    outline: 2px solid #D10024;
+    color: #D10024;
+}
+.main .star{
+    color: #D10024;
+}
+.main .mysel{
+    margin-left:5px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid rgb(220, 220, 220);
+}
+.box-right{
+    margin-left: 11em;
+}
+.box-right .myf div{
+    display: inline-block;
+    margin-left: 10px;
+}
+.my-num .num-input{
+    border-top:1px solid rgba(0,0,0,0.2);
+    border-left:1px solid rgba(0,0,0,0.2);
+    border-right:1px solid rgba(0,0,0,0.2);
+    border-bottom:none;
+    outline: none;
+    height: 3em;
+    width: 130px;
+    padding: 0 1em;
+}
+.my-num .num-input:focus{
+    border: 3px solid rgba(0,0,0,0.2);
+    border-radius: 0.25em;
+}
+.my-num .num-input-btn{
+    position: absolute;
+    width: 2em;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1em;
+}
+.my-num .num-input-plus{
+    border: 1px solid rgb(201, 201, 201);
+    top: 0;
+    right: 0;
+}
+.my-num .num-input-btn:hover{
+    color: #D10024;
+    background-color: rgba(0,0,0,0.2);
+}
+.my-num .num-input-sub{
+    border: 1px solid rgb(201, 201, 201);
+    right: 0;
+    bottom: 0;
+}
+.my-num{
+    position: relative;
+}
+.under{
+    position: relative;
+    /* margin-top: -50px; */
+}
+.last-nav{
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-250px);
+}
+.last-nav div{
+    margin-left: 60px;
+}
+.under .line_grey_out{
+    position: absolute;
+    height: 0.1em;
+    background-color: rgb(147, 147, 147);
+    width: 380px;
+    margin-left: 60px;
+    top: 12px;
+}
+.under .line_grey2{
+    position: absolute;
+    background-color: rgb(147, 147, 147);
+    width: 380px;
+    right: 100px;
+    top: 12px;
+    height: 0.1em;
+}
+.under .line_grey3{
+    position: absolute;
+    background-color: rgb(147, 147, 147);
+    width: 39px;
+    right: 592px;
+    top: 12px;
+    height: 0.1em;
+}
+.under .line_grey4{
+    position: absolute;
+    background-color: rgb(147, 147, 147);
+    width: 39px;
+    right: 709px;
+    top: 12px;
+    height: 0.1em;
+}
+.under .last-nav div{
+    cursor: pointer;
+}
+.under .last-nav div:hover{
+    color: #D10024;
+}
+.under .last-nav div::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 25px;
+    width: 0px;
+    height: 2px;
+    background-color: #D10024;
+    transition: all 500ms ease;
+}
+.under .last-nav div.one:hover::before{
+    width: 95px;
+}
+.under .last-nav div.two:hover::before{
+    width: 50px;
+}
+.under .last-nav div.three:hover::before{
+    width: 95px;
+}
+.last-text{
+    position: absolute;
+    color: grey;
+    top: 80px;
+    display: none;
+}
+.last-text2{
+    position: absolute;
+    color: grey;
+    top: 80px;
+    display: block;
+}
+.last-text3{
+    position: absolute;
+    color: grey;
+    top: 80px;
+    display: none;
+}
+.under :checked{
+    display: block;
+}
+.redstar{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.under .red-left-top{
+    font-size: 1.5em;
+}
+.under .red-left{
+    width: 23%;
+}
+.under .red-left-mid .radius-line{
+    display: inline-block;
+    background-color: rgb(228, 231, 237);
+    width: 120px;
+    height: 12px;
+    border-radius:20px ;
+    margin-left: 10px;
+}
+.under .red-left-mid .radius-line .in-line{
+    width: 80%;
+    height: 100%;
+    border-radius:20px ;
+    background-color: #D10024;
+}
+.under .red-left-mid .radius-line .in-line2{
+    width: 60%;
+    height: 100%;
+    border-radius:20px ;
+    background-color: #D10024;
+}
+.under .red-left-mid span{
+    color: rgb(168, 168, 168);
+    margin-left: 10px;
+}
+.under .text-cen-left{
+    display: inline-block;
+    width: 22%;
+}
+.under .text-cen-right{
+    width: 67%;
+    font-size: 0.9em;
+    display: inline-block;
+    color: rgb(168, 168, 168);
+}
+.under .mylast-in{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    color: rgb(173, 173, 173);
+}
+.under .area{
+    margin-top: 10px;
+    width:90% ;
+    height:120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    color: rgb(173, 173, 173);
+    border: 1px solid rgb(214, 214, 214);
+}
+.under .button i{
+    transition: all 500ms ease;
+}
+.under .button i:hover{
+    color: #D10024;
+}
+.under .pagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -80px;
+}
+.under .pagination li{
+    margin-left: 5px;
+}
+.page-link{
+    color: black;
+}
+.under .mysub{
+    margin-top: 15px;
+    border: none;
+    background-color: #D10024;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border-radius: 40px;
+}
+.potison{
+    width: 100%;
+    height: 500px;
+}

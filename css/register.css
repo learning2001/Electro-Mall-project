@@ -1,0 +1,245 @@
+/* 响应式部分 */
+@media all and (max-width:991px) {
+    .myres .myleft{
+        width: 100%;
+    }
+    .myres .myright{
+        width: 100%;
+    }
+}
+.text-r{
+    text-align: right;
+}
+.mynav .bc-title{
+    font-size: 1.5em;
+}
+.mynav{
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    border-top:0.5px solid rgb(217, 217, 217);
+    border-bottom:0.5px solid rgb(217, 217, 217);
+}
+.inmynav div{
+    padding: 0;
+    font-size: 0.7em;
+}
+.mynav .r_text1{
+    margin-top: 0.8em;
+    margin-left: 6em;
+}
+.mynav .r_text1 div{
+    display: inline-block;
+    margin-top: 0.5em;
+}
+.mynav .r_text1 div:first-child{
+    color: rgb(141, 141, 141);
+}
+.mynav .r_text1 div:not(:last-child)::after{
+    content: "/";
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.myres .myin{
+    padding: 0.5em 0 0.5em 1em;
+    display: block;
+    width: 100%;
+    border: 1px solid #E4E7ED;
+    color: rgb(220, 220, 220);
+    font-size: 0.8em;
+}
+.create input[type="checkbox"]{
+    display: none;
+}
+.mycheckbox{
+    width: 100%;
+}
+.mycheckbox::before{
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    height: 15px;
+    width: 15px;
+    outline: 1px solid rgb(152, 152, 152);
+    border-radius: 4px;
+    line-height: 15px;
+    text-align: center;
+}
+.entity:checked+.mycheckbox::before{
+    content: "√";
+    color: white; 
+}
+.entity:checked+.mycheckbox::before{
+    background-color: #D10024;
+    outline: none;
+}
+.xiangyin{
+    display: none;
+    transition: all 500ms ease;
+}
+.xiangyin span{
+    display: block;
+    font-size: 0.9em;
+    color: rgb(82, 82, 82);
+}
+.entity:checked+.mycheckbox .xiangyin{
+    display: block;
+}
+.inf{
+    display: none;
+}
+.entity:checked+.mycheckbox .inf{
+    display: block;
+}
+.myTarea{
+    border: 1px solid rgb(225, 225, 225);
+    width: 93%;
+    height: 7em;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+/* 右边提交框 */
+.sub{
+    width: 100%;
+    margin: 0 auto;
+    height: 35em;
+    border: 1px solid rgb(225, 225, 225);
+}
+.mytext_rb{
+    font-size: 1.8em;
+    color: rgb(209, 0, 36);
+}
+.rad{
+    display: none;
+}
+.onlycheck::before{
+    content: "";
+    display: inline-block;
+    box-sizing:border-box;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 1px solid rgb(161, 161, 161);
+    
+}
+.rad:checked+.onlycheck::before{
+    border: 4.5px solid #D10024;
+}
+.onlyshow{
+    display: none;
+}
+.rad:checked+.onlycheck .onlyshow{
+    display: block;
+}
+.sub .only{
+    width: 90%;
+    margin: 0 auto;
+}
+.sub .only .onlyshow{
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    color: rgb(137, 137, 137);  
+}
+.sub .create2 input{
+    display: none;
+}
+.sub .mysub{
+    display: block;
+    width: 90%;
+    height: 3em;
+    margin:0 auto;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    background-color: #D10024;
+}
+.line-solid{
+    width: 100%;
+    margin-top: 6em;
+    height: 0.15em;
+    background-color:rgb(228, 231, 237);
+}
+/* footer部分 */
+footer{
+    position: relative;
+    width: 520px;
+    margin: 0 auto;
+}
+footer .f-title{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(51, 51, 51);
+}
+footer .left{
+    height: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 1px solid #E4E7ED;
+    background-color: #fff;
+    color: rgb(117, 117, 117);
+}
+footer .right{
+    /* width: 180px; */
+    height: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #D10024;
+    border: none;
+    color: #fff;
+    font-size: 0.95em;
+}
+footer::before{
+    content: "\f003";
+    position: absolute;
+    left: -25px;
+    top: -35px;
+    z-index: -1;
+    transform: rotate(20deg);
+    font-family: FontAwesome;
+    font-size: 10em;
+    color: rgb(228, 231, 237);
+}
+footer .icon .iconin{
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(228, 231, 237);
+}
+footer .iconin:hover{
+    background-color: rgb(228, 231, 237);
+    color: #D10024;
+    cursor: pointer;
+}
+footer .pos1{
+    left: 160px;
+}
+footer .pos{
+    left: 210px;
+}
+footer .pos3{
+    left: 260px;
+}
+footer .pos4{
+    left: 310px;
+}
+/* 最底部黑色区域 */
+
+.last{
+    position: relative;
+    margin: 0;
+    margin-top: 5em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    color: white;
+    background-color: rgb(21, 22, 29);
+}
+.last li i{
+    color: #D10024;
+}
+

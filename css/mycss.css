@@ -1,0 +1,566 @@
+/* 定义背景字体 */
+.ss{
+    height: 700px;
+    width: 1px;
+}
+*{
+    list-style: none;
+}
+.bg-ngrey{
+    background-color: #1E1F29;
+}
+.bg-nblack{
+    background-color: #15161D;
+}
+.bg-nred{
+    background-color: #D10024;
+}
+.bg-nwhite{
+    background-color:rgb(255, 255, 255);
+}
+.bg-sgrey{
+    background-color: rgba(220, 220, 220,0.4);
+}
+.line_s{
+    width: 80%;
+    height: 0.1em;
+    margin: 0 auto;
+    background-color: rgb(206, 206, 206);
+}
+/* 自定义字体*/
+.text-main{
+    color: white;
+}
+.text_grey{
+    color: rgb(206, 206, 206);
+}
+.text_grey_2{
+    color: rgb(151, 151, 151);
+}
+.text_grey_3{
+    color: rgb(90, 93, 90);
+}
+.text_grey_4{
+    color: rgb(212, 212, 212);
+}
+.text_weight_6{
+    font-weight: 600;
+}
+.text_weight_7{
+    font-weight: 700;
+}
+.text_small{
+    font-size: 0.8em;
+}
+.text_big{
+    font-size: 1.2em;
+}
+.text_bigb{
+    font-size: 1.4em;
+}
+.text_red{
+    color: #D10024;
+}
+.text_del{
+    text-decoration: line-through;
+}
+.text_center{
+    text-align: center;
+}
+.pad_remove{
+    padding-right:0 ;
+}
+.pos_r{
+    position: relative;
+}
+.mt_big{
+    margin-top: 2em;
+}
+.pad_bot{
+    padding-bottom: 1.5em;
+}
+.dis_in{
+    display: inline-block;
+}
+.dis_bl{
+    display: block;
+}
+.dis_none{
+    display: none;
+}
+.color_r{
+    color:rgb(209, 0, 36);
+}
+.color_grey{
+    color:rgb(162, 162, 162);
+}
+.ml_4{
+    margin-left: 4em;
+}
+.mm_4{
+    margin-bottom: 3em;
+}
+.mt_6{
+    margin-top: 6em;
+}
+.line{
+    width: 100%;
+    height: 0.2em;
+}
+.mt-big{
+    margin-top: 8em;
+}
+/* 响应式布局 */
+@media all and (max-width:991px) {
+    header .usechange{
+        width: 100%;
+        float: left;
+    }
+    header .juzhong{
+        text-align: center;
+    }
+    header input.in_2{
+        width:35em ;
+    }
+    div .mybtn_1{
+        display: inline-block;
+    }
+
+}
+@media all and (max-width:300px){
+    .dis_b{
+        display: block;
+    }
+}
+/* 响应式按钮部分 */
+.mybtn_1{
+    display: none;
+}
+.mainNav{
+    background-color: #15161D;
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    top: 0;
+    height: 100vh;
+    transition: all 1000ms ease;
+}
+.togo{
+    left: 0px;
+    display: block;
+    transition: all 1000ms ease;
+}
+.mybtn_1{
+    cursor: pointer;
+}
+.mybtn_1 i{
+    color: white;
+}
+.mainNav  .ce li:not(:first-child){
+    color: rgb(206, 206, 206);
+}
+.mainNav .navbar-nav .nav-link{
+    padding-left: 10px;
+}
+/* 清除样式 */
+.nav-link:hover, .nav-link:focus{
+    color: rgb(209, 0, 36);
+}
+/* header部分 */
+.header_top{
+    width: 100%;
+}
+header .row{
+    font-size: 0.7em;
+}
+header .row a{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+header .fa{
+    color: red;
+}
+header .text_1{
+    font-size: 4em;
+    color: white;
+}
+header .r_circle{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+}
+
+
+.header_mid .in_3,.in_1,.in_2{
+    height:4em;
+    float: left;
+    border: 1px solid rgb(226, 226, 226);
+    /* font-size: 1.2em; */
+}
+header .in_1{
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em ;
+    width: 13em;
+    padding-left: 1em;
+    color: rgb(99, 99, 99);
+}
+header .in_2{
+    width: 26em;
+    color: rgb(99, 99, 99);
+    padding-left: 1em;
+}
+header .in_3{
+    width: 9em;
+    border: 1px solid rgb(209, 0, 36);
+    background-color: rgb(209, 0, 36);
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em ;
+    color: white;
+    padding-left: 1.5em;
+}
+
+header .pic i{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.2em;
+    color: white;
+}
+
+header .pic .r_circle{
+    position: absolute;
+    background-color: rgb(209, 0, 36);
+    width: 1.8em;
+    height: 1.8em;
+    right:1em;
+    top: -0.8em;
+    color: white;
+    text-align: center;
+    line-height: 1.8em;
+}
+.line_red{
+    background-color:rgb(209, 0, 36) ;
+}
+.nav_n .nav-link{
+    color: rgb(48, 48, 48);
+}
+.nav_n ul li{
+    margin-left: 1em;
+}
+.nav-link:hover{
+    color:rgb(209, 0, 36)  ;
+}
+.navbar-nav li::after{
+    content: '';
+    display: block;
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+    width: 0%;
+    height:0.1em;
+    transition: all 0.2s ease-in;
+    background-color: rgb(209, 0, 36);
+}
+.navbar-nav li:first-child a{
+    color:rgb(209, 0, 36);
+}
+.navbar-nav .base::after{
+    content: '';
+    display: block;
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+    width: 80%;
+    height:0.1em;
+    transition: all 0.2s ease-in;
+    background-color: rgb(209, 0, 36);
+}
+.navbar-nav li:hover::after{
+    width: 90%;
+}
+.shangpin .img_11{
+    overflow: hidden;
+}
+.shangpin .myimg{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.2);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x:80px ;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+.shangpin .img_1{
+    background-image: url("/img/product01.png");
+}
+.shangpin .img_2{
+    background-image: url("/img/product02.png");
+}
+.shangpin .img_3{
+    background-image: url("/img/product03.png");
+}
+.shangpin .myimg:hover{
+    background-size: 110%;
+}
+.shangpin .shape{
+    position: relative;
+    width: 90%;
+    height: 250px;
+    border-top:300px solid rgba(211, 24, 56,0.9);
+    border-right: 250px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+.shangpin .shape .font{
+    position: absolute;
+    display: inline-block;
+    font-size: 1.6em;
+    bottom: 6em;
+    left: 1.5em;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+.shangpin .shape .font .mytext_b{
+    font-size: 0.6em;
+}
+.shangpin .shape .mytext_1{
+    display:block;
+}
+.prodZone{
+    position: relative;
+}
+.prodShow{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background-color: #ffffff;
+    outline: 3px solid rgb(228, 228, 228) ;
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+.prodShow .mybox{
+    position: absolute;
+    background-color: #D10024;
+    width:60px;
+    height: 25px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 0.7em;
+    border:2px solid #D10024;
+}
+.prodShow .down{
+    top: 10px;
+    right: 15px;
+    background-color: white;
+    color: #D10024;
+}
+.prodShow .new{
+    top: 10px;
+    right: 85px;
+    color: white;
+}
+.prodShow .new2{
+    top: 10px;
+    right: 15px;
+    color: white;
+}
+.prodShow .myalltext{
+    text-align: center;
+}
+.prodShow span{
+    display: block;
+}
+.prodShow p{
+    display: inline-block;
+}
+.prodPop{
+    position: absolute;
+    height: 70px;
+    width: 93.5%;
+    background-color: #1E1F29;
+    bottom: 0;
+    z-index: -5;
+    transition: all 0.2s ease;
+}
+.prodShow:hover+.prodPop,.prodPop:hover{
+    bottom: -70px;
+    z-index: 2;
+}
+.prodShow .star i{
+    position: relative;
+}
+.prodShow:hover{
+    outline: 2px solid #D10024;
+}
+.prodShow .star::before{
+    content: '';   
+    position: absolute;
+    width: 80%;
+    height: 0.08em;
+    top: 26.85em;
+    left: 1.5em;
+    background-color: rgb(206, 206, 206);
+}
+.prodShow .myimg{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+.prodShow .myimg_1{
+    background-image: url("/img/product04.png");
+}
+.prodShow .myimg_2{
+    background-image: url("/img/product05.png");
+}
+.prodShow .myimg_3{
+    background-image: url("/img/product06.png");
+}
+.prodShow .myimg_4{
+    background-image: url("/img/product07.png");
+}
+.line_grey{
+    height: 0.1em;
+    background-color: rgb(228, 231, 237);
+}
+.navbar-nav li:first-child:after{
+    width: 85%;
+}
+.nav_text_1{
+    font-size: 1.5em;
+    color: #15161D;
+}
+.mytext_buttom{
+    text-align: center;
+}
+.prodPop .box_red{
+    position: relative;
+    width: 65%;
+    height: 2.8em;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 2.8em;
+    transition: all 0.2s ease;
+}
+.prodPop .box_red i{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    display: none;
+}
+.prodPop .box_red span{
+    transition: all 0.2s ease;
+}
+.prodPop .box_red:hover{
+    cursor: pointer;
+}
+.prodPop .box_red:hover i{
+    display: inline-block;
+}
+.prodPop .box_red:hover span{
+    margin-left: 0.5em;
+}
+.prodPop .box_red:hover{
+    width: 80%;
+    background-color: white;
+    outline: 2px solid #D10024;
+    color: #D10024;
+}
+.prodShow .iall_box{
+    width: 70%;
+    margin: 0 auto;
+}
+.prodShow .i_box{
+    display: inline-block;
+    height: 2.5em;
+    width: 2.5em;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    text-align: center;
+    line-height: 2.5em;
+}
+.iall_box .i_box:hover {
+    border-radius:50%;
+    background-color: rgb(228, 231, 237);
+    cursor: pointer;
+}
+.iall_box .i_box:hover i{
+    color: #D10024 ;
+}
+
+/* 中间图片部分 */
+.inimg{
+    position: relative;
+    width: 100%;
+    height: 25em;
+    margin-top: 5em;
+    background-color: rgb(228, 231, 237);
+}
+.inimg div.myimg{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 400px;
+}
+.inimg .img_left{
+    background: url(/img/product08.png);
+    top:5px;
+    left:10px;
+}
+.inimg .img_right{
+    background: url(/img/product02.png);
+    top:5px;
+    right:10px;
+}
+.inimg .mycircle div:first-child{
+    margin-left: 170px;
+}
+.inimg .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: #D10024;
+    text-align: center;
+}
+.inimg .mycircle div{
+    display: inline-block;
+}
+.inimg .mycircle{
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-400px);
+}
+.inimg .circle span{
+    display: block;
+}
+body .inimg .mycircle .dis_bl{
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+}
+body .inimg .mycircle .dis_bl2{
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.inimg .box_red{
+    position: absolute;
+    display: block;
+    text-align: center;
+    height: 50px;
+    width: 160px;
+    font-size: 1em;
+    border-radius: 50px;
+    color: white;
+    line-height: 50px;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+}
